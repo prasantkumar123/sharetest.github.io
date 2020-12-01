@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <button onclick="shareit()">click</button>
+       <script>
+           let shareData = {
+        title: 'MDN',
+        text: 'Learn web development on MDN!',
+        url: 'https://developer.mozilla.org',
+      }
+      
+      function shareit(){
+          navigator.share(shareData)
+      }
+       </script> 
+    </body>
+</html>
